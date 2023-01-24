@@ -2,14 +2,19 @@
   "name": "css2js",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "bin": {
+    "css2js": "./dist/bin/cli.js"
+  },
   "scripts": {
+    "build": "tsc -p tsconfig.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@types/css": "^0.0.33",
+    "@types/yargs": "^17.0.20",
     "css": "^3.0.0"
   }
 }
