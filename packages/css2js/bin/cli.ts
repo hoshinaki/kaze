@@ -1,12 +1,14 @@
 #! /usr/bin/env node
 import yargs from "yargs";
+import { hideBin } from 'yargs/helpers';
+import { css2js } from "..";
 
 const usage = "Usage: css2js [file] [...options]";
 
-const options = yargs
+const options = yargs(hideBin(process.argv))
   .usage(usage)
   .positional("file", {
-    describe: "Path to css file", type: "string", demandOption: true
+    describe: "Path to CSS file", type: "string", demandOption: true
   })
   .option("o", {
     alias: "out", describe: "Destination for css-in-js file", type: "string", demandOption: false
@@ -14,4 +16,6 @@ const options = yargs
   .option("j", {
     alias: "json", describe: "Generate JSON instead of JS", type: "string", demandOption: false
   })
-  .argv;
+  .demandOption(["file"])
+  .parse();
+

@@ -1,5 +1,5 @@
 {
-  "name": "css2js",
+  "name": "@kazeui/css2js",
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
@@ -16,5 +16,8 @@
     "@types/css": "^0.0.33",
     "@types/yargs": "^17.0.20",
     "css": "^3.0.0"
+  },
+  "dependencies": {
+    "yargs": "^17.6.2"
   }
 }

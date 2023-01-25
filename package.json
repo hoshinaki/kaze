@@ -4,7 +4,9 @@
   "license": "MIT",
   "scripts": {},
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "@kazeui/css2js": "^1.0.0"
+  },
   "devDependencies": {
     "@nrwl/nx-cloud": "latest",
     "nx": "15.5.1",

@@ -1,5 +1,5 @@
 {
-  "name": "styles",
+  "name": "@kazeui/styles",
   "version": "1.0.0",
   "description": "Kaze component styles plugin for Tailwind",
   "main": "index.js",
